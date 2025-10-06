@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: traggo
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: TRAGGO_USERNAME
+        value: admin
+      - key: TRAGGO_PASSWORD
+        value: admin123
+      - key: TRAGGO_LOGLEVEL
+        value: info
