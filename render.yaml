@@ -3,8 +3,8 @@ services:
     name: traggo
     env: docker
     plan: free
-    dockerfilePath: ./Dockerfile
-    autoDeploy: true
+    dockerfilePath: ""
+    image: traggo/server:latest
     envVars:
       - key: TRAGGO_USERNAME
         value: admin
